@@ -1,0 +1,683 @@
+body{
+    font-family:'Arial Narrow';
+    overflow: hidden;
+}
+.cont_head{
+    width: 95%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #2fa4e7;
+    box-shadow: inset   3px 4px 3px rgba(255,255,255,.7), 
+                inset   -2px -4px 3px rgba(0,0,0,.1), 
+                        2px 4px 10px rgba(0,0,0,.1);
+}
+.cont_logo{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont_logo img{
+    width: 70px;
+    height: 70px;
+}
+.cont_titulo{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.cont_titulo h1{
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Brush Script MT';
+    text-shadow: 2px 2px 2px #85929E;
+}
+.cont_login{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont_login button{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Corbel Light';
+    border: none;
+    background: none;
+}
+.cont_login button:hover{
+    font-weight: bold;
+    font-size: 30px;
+}
+/*-- contenedor inicial --*/
+.cont_inicial{
+    width: 95%;
+    height: 520px;
+    display: block;
+    margin: 0 auto;
+}
+.cont_inicial fieldset{
+    width: 99.4%;
+    height: 98%;
+    margin-top: 10px;
+    border: 2px ridge #2fa4e7;
+    box-shadow: 5px 5px 5px #AEB6BF;
+    color: #2fa4e7;
+    font-size: 30px;
+    font-family: 'Corbel Light';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
+.btn_nosotros{
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+    align-items: center;
+}
+.btn_nosotros:hover{
+    cursor: pointer;
+}
+/*-- contenedor msg nosotros --*/
+.cont_nosotros{
+    width: 40%;
+    height: 50%;
+    display: none;
+    text-align: justify;
+    border: 2px solid #2fa4e7;
+    box-shadow: 5px 5px 5px #AEB6BF;
+}
+.cont_nosotros p{
+    color: #000;
+    font-size: large;
+    margin: 15px;
+}
+.cont_cerrar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: right;
+    background-color: #2fa4e7;
+}
+.btn_cerrar{
+    width: 5%;
+    height: 100%;
+    color: #fff;
+    border: none;
+    background: none;
+}
+/*-- formulario de logueo --*/
+.form_login{
+    width: 30%;
+    height: 45%;
+    display: none;
+    border: 2px solid #2fa4e7;
+    box-shadow: 5px 5px 5px #AEB6BF;
+}
+.cont_input{
+    width: 100%;
+    height: 65%;
+    display: block;
+}
+.cont_input input{
+    width: 90%;
+    height: 25px;
+    margin: 10px 0 14px 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px ridge #2fa4e7;
+    font-size: 20px;
+    font-family:  'Arial Narrow';
+}
+.cont_fbotones{
+ width: 100%;
+ height: 25%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.btn_entry{
+   width: 100px;
+   height: 75%;
+   color: #fff;
+   font-size: 25px;
+   font-family:  'Arial Narrow';
+   border-radius: 5px;
+   border: 1px solid #2fa4e7;
+   background-color: #2fa4e7;
+   box-shadow: 2px 2px 2px #AEB6BF;
+}
+.btn_entry:hover{
+    color: #2fa4e7;
+    background-color: #fff;
+    cursor: pointer;
+}
+/*-- contenedor del menu --*/
+.cont_inicial2{
+    width: 94.6%;
+    height: 510px;
+    margin: 10px auto;
+    border: 2px ridge #2fa4e7; 
+    box-shadow: 5px 5px 5px #AEB6BF;
+}
+.cont_menu{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #2fa4e7;
+    box-shadow: inset   3px 4px 3px rgba(255,255,255,.7), 
+                inset   -2px -4px 3px rgba(0,0,0,.1), 
+                        2px 4px 10px rgba(0,0,0,.1);
+}
+.cont_menu .btn_busq{
+    width: 50px;
+    height: 70%;
+    color: #fff;
+    border: 1px solid #2fa4e7;
+    border-radius: 5px;
+    background: none;
+    font-size: large;
+    font-family: 'Arial Narrow';
+    margin-left: 25px;
+}
+.cont_menu button:hover{
+    cursor: pointer;
+}
+.cont_menu button img:hover{
+    width: 34px;
+    height: 34px;
+}
+.cont_menu input{
+    width: 200px;
+    height: 55%;
+    border-radius: 5px;
+    border: 1px inset #85929E;
+    outline: none;
+    text-align: center;
+    margin-left: 70px;
+}
+
+
+.btn_menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.cont_menu2{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Arial Narrow';
+    background-color: #1497db;
+    box-shadow: inset   3px 4px 3px rgba(255,255,255,.7), 
+                inset   -2px -4px 3px rgba(0,0,0,.1), 
+                        2px 4px 10px rgba(0,0,0,.1);
+}
+.menu{
+    width: 14%;
+    position: relative;
+    display: inline-block;
+}
+.cont_btns {
+    width: 100%;
+    height: 0;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px #85929E;
+    z-index: 1;
+    overflow: hidden;
+}
+.cont_btns button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: #000;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+.cont_btns button a{
+    color: #000;
+    text-decoration: none;
+}
+.cont_btns button a:hover{
+    color: #fff;
+}
+.cont_btns button:hover {
+    color: #fff;
+    background-color: #2fa4e7;
+}
+.img_btn{
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+}
+.menu:hover .cont_btns {
+    height: 150px;
+    transition: 1.2s;
+}
+.menu:hover .btn_menu {
+    opacity: 0.3;
+    transition: 1s;
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.form_registro{
+    width: 25%;
+    height: 100%;
+    display: block;
+    justify-content: right;
+}
+/*.form_registro button{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: larger;
+    margin: 50px auto 0 25%;
+    background-color: #2fa4e7;
+    border: 1px outset #2fa4e7;
+}
+.form_registro button:hover{
+    color: #2fa4e7;
+    background-color: #fff;
+    font-size: large;
+    cursor: pointer;
+}*/
+.input_form{
+    width: 280px;
+    height: 25px;
+    border: 1px inset #000;
+    margin: 15px auto 0 16px;
+    outline: none;
+    font-size: large;
+    font-family: 'Corbel Light';
+    border-radius: 3px;
+}
+.form_edicion{
+    width: 75%;
+    height: 100%;
+}
+/*--------------------------------*/
+.cont-box{
+    width: 90%;
+    height: 440px;
+    margin: 10px auto;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px #909497 ;
+}
+
+.t_head{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    background-color: #2fa4e7;
+    box-shadow: inset   3px 4px 3px rgba(255,255,255,.7), 
+                inset   -2px -4px 3px rgba(0,0,0,.1), 
+                        2px 4px 10px rgba(0,0,0,.1);
+}
+.t_head button{
+    width: 20%;
+    height: 100%;
+    color: #fff;
+    font-size: larger;
+    font-family: 'Arial Narrow';
+    border: none;
+    background:none;
+    text-align: center;
+}
+.t_head .btn-1{
+    width: 25%;
+}
+.cont-tabla{
+    width: 99.9%;
+    height: 90%;
+    display: block;
+    overflow-y: auto;
+}
+.cont-box-n{
+    width: 70%;
+    height: 80%;
+    margin: 15px auto;
+    display: block;
+    overflow-y: auto;
+}
+.table-1{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    border-collapse: collapse;
+    background-color: #eeeff0;
+}
+.table-1 td{
+    width: 20%;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Arial Narrow';
+    text-align: center;
+    border-bottom: 0.5px solid #001;
+}
+.table-1 .td-1{
+    width: 16.7%;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Arial Narrow';
+    text-align: center;
+    border-bottom: 0.5px solid #001;
+}
+.table-1 .td-2{
+    width: 20%;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Arial Narrow';
+    text-align: center;
+    border-bottom: 0.5px solid #001;
+}
+.table-1 .td-3{
+    width: 25%;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Arial Narrow';
+    text-align: center;
+    border-bottom: 0.5px solid #001;
+}
+
+.table-1 tr:hover{
+    cursor:pointer;
+    background-color: #fff;
+}
+/*tr:nth-child(even){
+    background-color: #85C1E9;
+}*/
+.cont-tabla::-webkit-scrollbar{
+    width: 0.5px;
+    background-color: #fff;
+}
+.cont-tabla::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #fff;
+}
+.btn-style{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: larger;
+    margin: 35px auto 0 25%;
+    box-shadow: 1px 1px 1px #85929E;
+}
+.btn-style-2{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: larger;
+    margin: 15px auto 0 25%;
+    box-shadow: 1px 1px 1px #85929E;
+}
+.color-1{
+    background-color: #2fa4e7;
+    border: 1px solid #2fa4e7;
+}
+.color-1:hover{
+    color: #2fa4e7;
+    background-color: #fff;
+    font-size: large;
+    cursor: pointer;
+}
+.color-2{
+    background-color: #E74C3C;
+    border: 1px solid #E74C3C;
+}
+.color-2:hover{
+    color: #E74C3C;
+    background-color: #fff;
+    font-size: large;
+    cursor: pointer;
+}
+.color-3{
+    background-color: #2ECC71;
+    border: 1px solid #2ECC71;
+}
+.color-3:hover{
+    color: #2ECC71;
+    background-color: #fff;
+    font-size: large;
+    cursor: pointer;
+}
+.color-4{
+    background-color: #F4D03F;
+    border: 1px solid #F4D03F;
+}
+.color-4:hover{
+    color: #F4D03F;
+    background-color: #fff;
+    font-size: large;
+    cursor: pointer;
+}
+
+.cont_menu3{
+    width: 100%;
+    height: 8%;
+    margin-top: -30%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Arial Narrow';
+    background-color: #1497db;
+    box-shadow: inset   3px 4px 3px rgba(255,255,255,.7), 
+                inset   -2px -4px 3px rgba(0,0,0,.1), 
+                        2px 4px 10px rgba(0,0,0,.1);
+}
+.cont_menu3 .btn-ini{
+    margin-right: 20px;
+    border: none;
+    background: none;
+}
+.btn-1{
+    width: 25%;
+}
+.t_head .btn-2{
+    width: 50%;
+}
+.t_head .btn-3{
+    width: 33.3%;
+}
+.t_head .btn-9{
+    width: 20%;
+}
+.cont-btn-serv{
+    margin-top: 100px;
+}
+.input_form-serv{
+    width: 280px;
+    height: 25px;
+    border: 1px inset #000;
+    margin: 60px auto 0 16px;
+    outline: none;
+    font-size: large;
+    font-family: 'Corbel Light';
+    border-radius: 3px;
+}
+.cont_menu-2 .btn-menu-2{
+    width: 15%;
+    height: 100%;
+    background: none;
+    border: none;
+}
+.btn-menu-2 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.btn-menu-2 a:hover{
+    font-size: 16px;
+}
+.cont_menu-2{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #2fa4e7;
+    box-shadow: inset   3px 4px 3px rgba(255,255,255,.7), 
+                inset   -2px -4px 3px rgba(0,0,0,.1), 
+                        2px 4px 10px rgba(0,0,0,.1);
+}
+.cont-work{
+    width: 100%;
+    height: 85%;
+    display: flex;
+}
+
+.cont-dinfo{
+    width: 30%;
+    height: 100%;
+}
+.cont-dinfo fieldset{
+    width: 100%;
+    height: 95%;
+    font-size: 16px;
+    padding: 0%;
+    margin: 25px 50px;
+}
+fieldset legend{
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Corbel Light';;
+}
+fieldset .titulo{
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Corbel Light';
+    margin: 10px auto 0 0;
+    background-color: #F2F3F4;
+}
+fieldset .info{
+    font-size: 16px;
+    font-family: 'Corbel Light';
+    margin: 13px 0 0 85px;
+}
+fieldset input{
+    border: none;
+    outline: none;
+}
+.cont-dvehiculo{
+    width: 60%;
+    height: 93%;
+    margin-left: 70px;
+    margin-top: 35px;
+    border: 1px inset #909497;
+    overflow-y: scroll;
+}
+.cont_menu .btn_busq-2{
+    width: 50px;
+    height: 70%;
+    color: #fff;
+    border: 1px solid #2fa4e7;
+    border-radius: 5px;
+    background: none;
+    font-size: large;
+    font-family: 'Arial Narrow';
+    margin-left: 840px;
+}
+.cont_menu .btn_busq-2:hover{
+    cursor: pointer;
+}
+.cont_menu .btn_busq-2 img:hover{
+    width: 34px;
+    height: 34px;
+}
+.cont-form-pdf{
+    width: 50%;
+    height: 20%;
+    margin: 10px auto;
+}
+
+.cont_menu2 .btn-refresh{
+    width: 50px;
+    height: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 1190px;
+}
+/*.btn-refresh .img-btn-2{
+    width: 70%;
+    height: 70%;
+}*/
+.btn-refresh .img-btn-2:hover{
+    width: 75%;
+    height: 75%;
+}
+
+.form_registro-2{
+    width: 35%;
+    height: 90%;
+    display: block;
+    justify-content: right;
+    margin: 20px auto;
+}
+.form_registro-2 label{
+    font-family: 'Arial Narrow';
+    font-size: large;
+}
+.form_registro-2 input{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form_registro-2 button{
+    margin: 25px 150px 0px;
+}
+.form_registro-3{
+    width: 35%;
+    height: 90%;
+    display: block;
+    justify-content: right;
+    margin: 5px auto;
+}
+.form_registro-3 label{
+    margin-left: 5px;
+    font-family: 'Arial Narrow';
+    font-size: large;
+}
+.form_registro-3 input{
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.form_registro-3 button{
+    margin: 25px 145px 0px;
+}
